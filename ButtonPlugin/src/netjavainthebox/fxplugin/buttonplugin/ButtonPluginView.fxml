@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="netjavainthebox.fxplugin.buttonplugin.ButtonPluginViewController">
+   <children>
+      <Button layoutX="117.0" layoutY="75.0" mnemonicParsing="false" onAction="#action" style="-fx-font-size: 24;" text="OK" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="75.0" />
+   </children>
+</AnchorPane>
