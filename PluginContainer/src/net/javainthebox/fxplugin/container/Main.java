@@ -2,13 +2,11 @@ package net.javainthebox.fxplugin.container;
 
 import java.util.ServiceLoader;
 import javafx.application.Application;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import net.javainthebox.fxplugin.plugin.Plugin;
 import net.javainthebox.fxplugin.plugin.PluginFactory;
 
 public class Main extends Application {
@@ -34,7 +32,6 @@ public class Main extends Application {
                 = ServiceLoader.load(PluginFactory.class);
         
         loader.forEach(factory -> {
-            System.out.println(factory);
             Tab tab = new Tab(factory.getName());
             factory.createPlugin().ifPresent(plugin -> tab.setContent(plugin.getContent()));
             
@@ -45,5 +42,4 @@ public class Main extends Application {
     public static void main(String... args) {
         launch(args);
     }
-    
 }
